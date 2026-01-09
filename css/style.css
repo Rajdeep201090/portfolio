@@ -893,6 +893,17 @@ section {
         gap: 1rem;
     }
 
+    /* On mobile the menu is a white overlay; keep links readable even when navbar becomes .scrolled */
+    .nav-links a,
+    .navbar.scrolled .nav-links a {
+        color: var(--text-dark);
+    }
+
+    .nav-links a:hover,
+    .navbar.scrolled .nav-links a:hover {
+        color: #667eea;
+    }
+
     .nav-links.active {
         left: 0;
     }
