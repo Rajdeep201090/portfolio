@@ -146,7 +146,11 @@ function submitToGoogleForm(form) {
     
     // Check if Google Form URL is configured
     if (!GOOGLE_FORM_URL || GOOGLE_FORM_URL === "YOUR_GOOGLE_FORM_URL_HERE") {
-        showNotification('Sorry, something went wrong. Please email directly at sarkerrajdeep8@gmail.com', 'error');
+        showNotification(
+            'Sorry, something went wrong. Please email directly at <a href="mailto:sarkerrajdeep8@gmail.com">sarkerrajdeep8@gmail.com</a>.',
+            'error',
+            true
+        );
         return;
     }
     
@@ -190,10 +194,16 @@ function submitToGoogleForm(form) {
 }
 
 // Show notification function
-function showNotification(message, type) {
+function showNotification(message, type, isHtml = false) {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
-    notification.textContent = message;
+
+    if (isHtml) {
+        notification.innerHTML = message;
+    } else {
+        notification.textContent = message;
+    }
+
     notification.style.cssText = `
         position: fixed;
         top: 100px;
@@ -207,6 +217,13 @@ function showNotification(message, type) {
         animation: slideIn 0.3s ease;
         max-width: 350px;
     `;
+
+    if (isHtml) {
+        notification.querySelectorAll('a').forEach(a => {
+            a.style.color = 'inherit';
+            a.style.textDecoration = 'underline';
+        });
+    }
     
     document.body.appendChild(notification);
     
