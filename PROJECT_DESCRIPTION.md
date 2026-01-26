@@ -15,7 +15,7 @@ My portfolio website serves as a comprehensive digital showcase of my academic b
 - SEO optimization and structured data for better discoverability
 - Social media integration linking to my professional profiles
 
-## How we built it
+## How I built it
 The portfolio was built using core web technologies to ensure performance, accessibility, and maintainability:
 - **HTML5** for semantic structure and content organization
 - **CSS3** with custom properties for theming and modern styling techniques
@@ -28,7 +28,7 @@ The portfolio was built using core web technologies to ensure performance, acces
 - Created a responsive design using Flexbox and Grid layouts
 - Added smooth scroll behaviors and animations for enhanced UX
 
-## Challenges we ran into
+## Challenges I ran into
 1. **Responsive Design**: Ensuring the layout looked perfect across all screen sizes, from mobile phones to large desktop monitors, required careful planning and testing.
 
 2. **Performance Optimization**: Balancing visual appeal with fast load times meant optimizing images, implementing lazy loading, and minimizing resource requests.
@@ -41,7 +41,7 @@ The portfolio was built using core web technologies to ensure performance, acces
 
 6. **Content Organization**: Deciding how to present information in a clear, engaging way without overwhelming visitors took multiple iterations.
 
-## Accomplishments that we're proud of
+## Accomplishments that I'm proud of
 - Successfully launched a fully functional, professional portfolio website from scratch
 - Achieved a responsive design that provides excellent user experience on all devices
 - Implemented proper SEO optimization with a perfect lighthouse score potential
@@ -52,7 +52,7 @@ The portfolio was built using core web technologies to ensure performance, acces
 - Successfully deployed the website and made it publicly accessible
 - Created a scalable foundation that can easily accommodate future additions
 
-## What we learned
+## What I learned
 - **Core Web Development**: Deepened understanding of HTML5 semantic elements, CSS3 advanced features, and JavaScript DOM manipulation
 - **Responsive Design Principles**: Learned mobile-first approach and how to use media queries effectively
 - **Performance Optimization**: Understood the importance of page load speed and techniques to achieve it
