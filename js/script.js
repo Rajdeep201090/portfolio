@@ -169,7 +169,7 @@ function submitToGoogleForm(form) {
     // Check if Google Form URL is configured
     if (!GOOGLE_FORM_URL || GOOGLE_FORM_URL === "YOUR_GOOGLE_FORM_URL_HERE") {
         showNotification(
-            'Sorry, something went wrong. Please email directly at <a href="mailto:info@rajdeep.engineer">info@rajdeep.engineer</a>.',
+            'Sorry, something went wrong. Please email directly at <a href="mailto:info@rajdeep.codes">info@rajdeep.codes</a>.',
             'error',
             true
         );
